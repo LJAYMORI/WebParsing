@@ -32,6 +32,10 @@ public class MemoryCache {
         }
     }
 
+    public void clear() {
+        mCache.evictAll();
+    }
+
     public Bitmap getBitmap(String imageUrl) {
         return mCache.get(imageUrl);
     }

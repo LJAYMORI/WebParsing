@@ -207,6 +207,7 @@ public class ImageLoader {
 
     public void clear() {
         mDiskCache.clearCache();
+        mMemoryCache.clear();
 
         for (AsyncTask asyncTask : mAsyncTaskCache) {
             asyncTask.cancel(true);
